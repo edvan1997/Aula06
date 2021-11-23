@@ -1,0 +1,66 @@
+@charset "UTF-8"
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: black;
+}
+body{
+    position: absolute;
+    margin-left: 390px;
+    margin-top: 200px;
+    background: rgb(80, 60, 170); 
+    height: 300px;
+    width: 650px;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 15px;
+    border: none;
+}
+body[Texto_1]{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+input[type="submit"]{
+    position: absolute;
+    display: flex;
+    left: 45%;
+    top: 200px;
+    background: purple;
+    border: 1px  purple;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8;
+    outline: 0;
+    color: white;
+    width: 60px;
+    height: 35px;
+
+}
+input[type="submit"]:hover{
+    background: rgb(228, 164, 228);
+    border: 1px solid rgb(228, 164, 228);
+    color: rgb(58, 57, 57);
+
+}
+input[type="number"]{
+    position: absolute;
+    right: 36%;
+    top: 150px;
+    background: rgb(179, 179, 179);
+    height: 20px;
+}
+#quilometros{
+    position: absolute;
+    top: 155px;
+    left:65%;
+    color: black;
+}
+#para{
+    position: absolute;
+    background: yellow;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">   
+    <title>Aula 05</title>
+</head>
+<body>
+    <h1 class="texto_1">Sistema de Multas - Aula 06</h1>
+    <p>Velocidade do carro</p>
+    <input type="number" name="velocidade" placeholder="Digite sua Velcidade" id="velocidade" >
+    <strong id="quilometros"> KM/h</strong>
+    <input type="submit" value="Verificar" onclick="calcular()">
+    <div id="vResultado"></div>
+</div>
+    <script>
+        //cria funçao calcular
+        function calcular(){
+            //Define a varaivael velociaded pegando id
+            let velocidade = document.getElementById('velocidade');
+            let vResultado = document.getElementById('vResultado');
+            let vel = Number(velocidade.value);
+            // res.innerHTML = ` Sua velociade atual é de <strong>${vel} KM/h</strong>`;
+            vResultado.innerHTML = 'Sua velociade atual é de <strong>' + vel + 'KM/h <strong>';
+            if(vel > 50){
+                //Acrescenta na div vResultado informando que ele etá multado
+                 vResultado.innerHTML += 'Você está <strong>MULTADO!</strong>';
+                 // Emite um alerta
+                // alert('Você está MULTADO! Pois sua velocidade é '+ vel + 'KM/h' );
+            }
+            else{
+                vResultado.innerHTML += 'Parabéns, você não foi multado.';
+            }
+
+        }
+    </script>
+</body>
+</html>
