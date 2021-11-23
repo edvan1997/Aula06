@@ -8,6 +8,7 @@
     <title>Aula 05</title>
 </head>
 <body>
+    <!-- <div>
     <h1 class="texto_1">Sistema de Multas - Aula 06</h1>
     <p>Velocidade do carro</p>
     <input type="number" name="velocidade" placeholder="Digite sua Velcidade" id="velocidade" >
@@ -36,5 +37,23 @@
 
         }
     </script>
+    </div> -->
+    <div class="zamb">
+    <h2>Exercício 04</h2>
+
+        <input type="text" name="nome" id="nome">
+        <input type="submit" id="enviarN" onclick="enviarN()">
+        <div id="exibe"></div>
+    <script>
+            function enviarN(){
+                let nome = document.getElementById('nome').value;
+                let exibe = document.getElementById('exibe');
+                // exibe.innerHTML += ('Olá '+exibe+ '.');
+                alert("Olá " + nome + ".");
+                
+            }
+
+    </script>
+    </div>
 </body>
 </html>
